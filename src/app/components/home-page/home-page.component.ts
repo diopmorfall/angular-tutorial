@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal, animals } from 'src/app/animals';
 
 @Component({
   selector: 'app-home-page',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  animals: Animal[] | undefined;
+  constructor() { 
+    this.animals = animals;  
+  }
 
   ngOnInit(): void {
   }

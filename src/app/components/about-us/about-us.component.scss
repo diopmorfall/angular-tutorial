@@ -1,0 +1,24 @@
+:host{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+img, p{
+    width: 60%;
+}
+
+img{
+    margin: 60px auto;
+}
+
+p{
+    margin: auto;
+    font-size: 18px;
+}
+

@@ -1,0 +1,22 @@
+:host{ //* selecting the root element of the component
+    height: 60px;
+    width: 80%;
+    margin: auto;
+    border: 2px solid green;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 24px;
+
+    &:hover, &:active{
+        color: blue;
+    }
+}

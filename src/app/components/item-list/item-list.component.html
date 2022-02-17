@@ -1,0 +1,20 @@
+<h2 class="page-title">Look at the animals hosted in our virtual reserve</h2>
+
+<section class="container">
+    <div class="animal-card" *ngFor="let animal of animals">
+        <h4>
+            <a class="a"
+                [ngClass]="[
+                    animal.isExtinct ? 'extinct' :
+                        animal.currentPopulation > 100 ? 'safe' : 'endangered'
+                ]"
+                [title]="animal.commonName + ' details'"
+                [routerLink]="['/animals', animal.id]"
+            >
+                {{ animal.commonName | uppercase}}
+            </a>
+        </h4>
+        <p>{{ animal.genre + ' ' + animal.species }}</p>
+    </div>
+</section>
+

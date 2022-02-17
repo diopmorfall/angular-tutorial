@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.animal-card{
+    width: 30%;
+    height: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-style: italic;
+}

@@ -15,7 +15,7 @@
                 <span>Current population: </span> {{ animal.currentPopulation }}
             </p>
             
-            <button type="button"
+            <button type="button" (click)="saveAnimal(animal.commonName)"
                 *ngIf="!animal.isExtinct"
             >
                 Protect this animal from extinction!

@@ -23,6 +23,10 @@ export class ItemComponent implements OnInit {
 		);
 	}
 
+	saveAnimal(name: string){
+		alert('Thank you for supporting the ' + name.toLowerCase());
+	}
+
 	ngOnInit(): void {
 	}
 

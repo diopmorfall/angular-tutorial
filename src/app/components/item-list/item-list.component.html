@@ -6,7 +6,7 @@
             <a class="a"
                 [ngClass]="[
                     animal.isExtinct ? 'extinct' :
-                        animal.currentPopulation > 100 ? 'safe' : 'endangered'
+                        animal.currentPopulation > 5000 ? 'safe' : 'endangered'
                 ]"
                 [title]="animal.commonName + ' details'"
                 [routerLink]="['/animals', animal.id]"

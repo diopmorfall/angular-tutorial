@@ -1,0 +1,26 @@
+<section *ngIf="animal">
+    <header>
+        <h3>Some details about the {{ animal.commonName }}</h3>
+    </header>
+    <div class="details">
+        <img [src]="animal.imgUrl" alt="'A picture of ' + animal.commonName">
+        <div class="infos">
+            <p>
+                <span>Scientific name: </span> {{ animal.genre + ' ' + animal.species}}
+            </p>
+            <p>
+                <span>Locations: </span> {{ animal.locations }}
+            </p>
+            <p>
+                <span>Current population: </span> {{ animal.currentPopulation }}
+            </p>
+            
+            <button type="button"
+                *ngIf="!animal.isExtinct"
+            >
+                Protect this animal from extinction!
+            </button>
+            <p class="extinct" *ngIf="animal.isExtinct">This animal is extinct</p>
+        </div>
+    </div>
+</section>

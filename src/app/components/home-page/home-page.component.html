@@ -1,13 +1,7 @@
-<h2>Look at the animals we host in our virtual reserve</h2>
+<h2>Welcome to our virtual reserve!</h2>
 
-<div *ngFor="let animal of animals">
-    <h4>
-        <a 
-            [title]="animal.commonName + ' infos'"
-            [routerLink]="['/animals', 'animal.id']"
-        >
-        {{ animal.commonName }}
-        </a>
-    </h4>
-</div>
+<img 
+	src="https://www.wwf.ch/sites/default/files/styles/default_small/public/2021-01/Flamingo_BWBM17_Alamy.jpg?h=1972c7d6&itok=9X3dWlL_"
+	alt="Our reserve"
+>
 <!--todo: ngFor for each animal -->

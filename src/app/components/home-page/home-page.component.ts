@@ -1,19 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Animal, animals } from 'src/app/animals';
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+	selector: 'app-home-page',
+	templateUrl: './home-page.component.html',
+	styleUrls: ['./home-page.component.scss'],
+	host: {class: 'page-title'}
 })
 export class HomePageComponent implements OnInit {
 
-  animals: Animal[] | undefined;
-  constructor() { 
-    this.animals = animals;  
-  }
+	constructor() { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
 }
